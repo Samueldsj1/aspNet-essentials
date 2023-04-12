@@ -13,13 +13,21 @@ public class CursoController:Controller{
         C1.TituloMarketing = "DotNet do Zero";
 
         //GET==CHAMOU
-        ViewData["Desc"] = C1.Descricao;
-        ViewData["TitInt"] = C1.TituloInterno;
-        ViewData["TitMark"] = C1.TituloMarketing;
+        ViewData["Curso"] = C1;
+        
+    
 
 
 
         return View();
     }
+
+    public IActionResult Create(){
+        ViewData["titulo"] = "Cadastro de Cursos";
+        ViewBag.DataHora = DateTime.Now;
+    
+        return View();
+    }
+     
     
 }
