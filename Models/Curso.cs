@@ -3,7 +3,7 @@ namespace AplicativoWeb.Models;
 
 public class Curso
 {
-    public int id {get;set;}
+    public int Id {get;set;}
 
     public string? TituloMarketing {get;set;}
 
